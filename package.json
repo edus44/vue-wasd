@@ -1,6 +1,6 @@
 {
   "name": "vue-wasd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Listen for global keybindings",
   "main": "index.js",
   "scripts": {

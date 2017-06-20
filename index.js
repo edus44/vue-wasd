@@ -13,7 +13,7 @@ function bindHook(bus,fn){
     return function(){
         if (typeof this.$options.wasd == 'object'){
             for(let evName in this.$options.wasd){
-                bus[fn](evName,this.$options.wasd[evName])
+                bus[fn](evName,this.$options.wasd[evName].bind(this))
             }
         }
     }
