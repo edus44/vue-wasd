@@ -27,7 +27,7 @@ const wasdMixin = {
     beforeDestroy(){
         if (this._wasdListeners && this._wasdListeners.length){
             for(let i in this._wasdListeners){
-                bus.removeListener(this._wasdListeners[i][0],this._wasdListeners[i][1])
+                this._wasdBus.removeListener(this._wasdListeners[i][0],this._wasdListeners[i][1])
             }
         }
     }
